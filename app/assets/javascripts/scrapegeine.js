@@ -167,7 +167,7 @@ jQuery(document).ready(function($) {
         $.backstretch([
             "/assets/background-intro.jpg"
             , "/assets/background-intro-2.jpg"
-            , "/assets/background-intro-3.jpg"
+            , "/assets/background-intro-4.jpg"
           ], {duration: 2600, fade: 1000});
 
     }
