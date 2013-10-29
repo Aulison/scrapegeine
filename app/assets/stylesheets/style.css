@@ -1154,11 +1154,12 @@ Clients Section
 #clients .client-description {
     margin: 30px 0;
     display: none;
+    margin-top: 0px;
 }
 
 #clients .client-description p {
     text-align: left;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 26px;
     color: #ffffff;
     padding: 0px;
@@ -2039,4 +2040,9 @@ ul.socialNetwork {
 	padding: 20px;
 	z-index: 999;
 	color: white;
+}
+
+.clients_h2{
+    margin-bottom: 0px;
+color: white;
 }

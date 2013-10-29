@@ -89,7 +89,7 @@
       <nav id="navigation">
         <ul class="nav navbar-nav one-page-nav">
           <li id="home_link" class="current"><a href="<%= home_url %>#home">Home</a></li>
-          <li id="about_link"><a href="<%= home_url %>#about">About</a></li>
+          <li id="about_link"><a href="<%= home_url %>#clients">About</a></li>
           <li id="services_link"><a href="#services">Services</a></li>			
           <li id="portfolio_link"><a href="#portfolio">Portfolio</a></li>
           <li id="contact_link"><a href="#footer">Contact</a></li>
@@ -124,13 +124,13 @@
           <a href="#" class="contact-form-trigger">
             <h3>Request A Quote</h3>
           </a>
-          <form method="post" action="http://www.thecowisgonemoo.com/nervaq/send-mail.php" class="contact-form">
             <div class="contact-form-close">
               <a href="#"></a>
             </div>
             <h2 class="section-pre-title">Keep in touch</h2>
             <h1 class="section-title">Contact Us</h1>
             <div class="section-icon background-white"></div>
+            <div id="quote_form">
             <div class="row">
               <div class="col-md-6">
                 <input type="text" name="name" placeholder="Insert your name" class="required">
@@ -190,8 +190,8 @@
             </div>
             <textarea name="message" placeholder="Insert your message" class="required"></textarea>
             <div class="response-message"></div>
-            <input type="submit" value="Send Email" name="submit">	
-          </form> <!-- End Form -->
+            <input type="submit" value="Send Email" name="submit" onclick="request_a_quote()">	
+        </div>
         </div> <!-- End Contact Form Container -->
       </div> <!-- End Row -->
       <div class="row">

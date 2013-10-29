@@ -142,7 +142,7 @@ jQuery(document).ready(function($) {
         var home = $('#home');
 
         if( home.hasClass('fullscreen') ) {
-            home.height( getWindowHeight() );
+            home.height( getWindowHeight() + 300 );
         } 
     }
 
