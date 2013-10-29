@@ -1,0 +1,88 @@
+
+<section id="services_all">
+  
+  <div class="container">
+    <div class="row" style="background-color: white">
+      <div class="col-md-12" style="margin-top: 100px">
+        <h2 class="section-pre-title">We offer</h2>
+        <h1 class="section-title">Services</h1>
+        <div class="section-icon">
+          <i class="fa fa-wrench"></i>
+        </div>
+        <section id="service_extraction" style="text-align: left">
+          <h2 style="">Extraction</h2>
+          <p>ScrapeGenie is a reliable & efficient way to harvest content from anywhere it exists online, to 
+            power search verticals, populate reports or trigger alerts according to your unique specifications. 
+            ScrapeGenie navigates obstacles that stop the traditional search engines dead in their tracks. 
+            It fills in forms, remembers passwords & pushes buttons to find its way to targeted content, and then 
+            deliver it in the format of your choice. Its powerful architecture is nimble and discreet, with 
+            extensive infrastructure to enable ScrapeGenie to harvest large quantities of data with minimal 
+            impact on the sites it collects from. Capabilities like these have traditionally been available 
+            through only a very small group of very high-end software providers, and deployments have traditionally 
+            required extensive training and ongoing support services to also be purchased at an additional premium. 
+            But ScrapeGenie takes a different approach. We provide highly scalable web-data-extraction as a service. 
+            There’s no software to license and when you hire ScrapeGenie you put our entire team behind your project. 
+            Our tested and proven technology and seasoned staff make us the efficient way to extract large amounts of 
+            online content without having to train and manage your own in-house personnel. This translates to tremendous savings, 
+            in both time and money, with rich, new areas of opportunity for businesses and agencies alike, ready to leverage 
+            the powerful and unique capabilities that the ScrapeGenie solution provides.
+          </p>
+        </section>
+        <section id="service_structuring">
+          <h2>Structuring</h2>
+          <p>Different web sites have different ways of depicting information. Depending upon the sources that you wish 
+            to gather data from, various degrees of “structuring” may be required before the data will usable for the 
+            particular purposes you have in mind for it. This will often require that some “massaging” and validation be 
+            done, and commonly makes use of multiple approaches that may include some form of context analysis, weighted 
+            terms analysis, natural language processing, keyword aliasing, inference logic or field parsing. ScrapeGenie’s 
+            proprietary technology can automate this part of the process once the initial set-up phase is complete, to 
+            bring order-out-of-chaos and prepare the data for easy incorporation into the application or database of your 
+            choice. The amount of structuring that will be required will depend upon several factors, such as the type of 
+            sites that you’re collecting data from and the nature of the information that is to be obtained. In general, 
+            highly un-structured sources–like classified ads–will typically require much more work than comparatively more 
+            structured sites–such as vertical search engines–that present their content in neatly tabled format. Once you 
+            tell us what kind of data you’re interested in we can give you an idea of how much work will likely be required 
+            to extract it and make it app-ready.</p>
+        </section>
+          <section id="service_customize" style="text-align: left">
+            <h2>Easy to Customize</h2>
+            <p>Information Made Actionable<br/>
+                Once the data has been collected and “structured” it can be normalized to fit within the existing 
+                framework of your site, application, dashboard, report or alerting system. We tailor the information to 
+                be sent or pulled into your application seamlessly according to the schedule that you require, and in the 
+                format of your choice. All major programming languages and database formats are supported with coding and 
+                taxonomy services available on an hourly basis. We’re happy to work with your existing team to help ensure 
+                a successful deployment, or handle the entire project if required. A full range of development services are 
+                available, see: “Programming” for pricing information and services offered.</p>
+          </section>
+          <section id="service_programing" style="text-align: left">
+            <h2>Programming</h2>
+            <p>Have a Bright Idea?<br/>
+            When you need a little help we can lend a hand. Our team of senior-level developers brings a broad range of 
+            diversified skills and has several years of experience architecting and deploying enterprise level projects. 
+            We work in all popular programming languages and provide a full range of services including mobile app 
+            development and Search Engine Optimization. If you’re not sure what your needs are, we’ll be happy to discuss 
+            options with you to help zero in on a best course of action for your particular budget and timeline requirements.
+            We also sometimes partner with companies with ideas that we like. If you have a big idea and would like to talk 
+            about it, give us a call.</p>
+          </section>
+      </div> <!-- End Column 12 -->					
+    </div> <!-- End Row -->
+  </div> <!-- End Container -->
+</section> <!-- End Services Section -->
+<%= javascript_include_tag "jquery.min" %>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("nav#navigation ul li").removeClass("current");
+    $("nav#navigation ul li#services_link").addClass("current");
+    $("nav#navigation ul li").addClass("external");
+        $.backstretch([
+            "/assets/background-intro.jpg"
+            , "/assets/background-intro-2.jpg"
+            , "/assets/background-intro-3.jpg"
+          ], {duration: 2600, fade: 1000});
+
+  });
+  
+   
+</script>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="/assets/modernizr.js" style=""></script>
+
+    <!-- ==============================================
+    Title and basic Meta Tags
+    =============================================== -->
+    <meta charset="utf-8">
+    <title>ScrapeGeine</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- ==============================================
+    Mobile Metas
+    =============================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if IE 7]>
+            <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+    <!--[if lte IE 8]> 
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="/assets/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ==============================================
+    Fonts
+    =============================================== -->
+<%#*<link href="css/css" rel="stylesheet" type="text/css">%>
+
+    <!-- ==============================================
+    JS
+    =============================================== -->
+  <div class="fit-vids-style" id="fit-vids-style" style="display: none;">
+    ­<style>
+      .fluid-width-video-wrapper{width:100%;position:relative;padding:0;}
+      .fluid-width-video-wrapper iframe,
+      .fluid-width-video-wrapper object,
+      .fluid-width-video-wrapper embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+    </style>
+  </div>
+
+  <!-- ==============================================
+  Favicons
+  =============================================== -->
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
+
+  <!-- <script type="text/javascript" charset="UTF-8" src="/assets/{common,util,stats}.js"></script> -->
+</head>
+<body>
+
+  <!-- ==============================================
+  Preloader
+  =============================================== -->
+  <div id="preloader" style="display: none;">
+    <div id="loading-animation" style="display: none;">&nbsp;</div>
+  </div> <!-- End Preloader -->
+
+  <!-- ==============================================
+  Main Nav
+  =============================================== -->
+  <header id="mainHeader"class="navbar navbar-fixed-top"> 
+    <div class="container">
+    <a href="" class="navbar-brand brand">
+      <span id="logo" style="color: #fff;background: transparent;">
+        <span style="color: #1197CE">S</span>crape<span style="color: #5aa9ce">G</span>enie
+      </span>
+    </a>
+      <a href="#" class="nav-menu-trigger"><i class="icon-twitter"></i></a>
+    <nav id="navigation">
+      <ul class="nav navbar-nav one-page-nav">
+        <li id="home_link" class="current"><a href="<%= home_url %>#home">Home</a></li>
+        <li id="about_link"><a href="<%= home_url %>#about">About</a></li>
+        <li id="services_link"><a href="#services">Services</a></li>			
+        <li id="portfolio_link"><a href="#portfolio">Portfolio</a></li>
+        <li id="team_link"><a href="#team">Team</a></li>
+        <li id="contact_link"><a href="#newsletter">Contact</a></li>
+        <li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+      </ul>
+    </nav>
+      </div>
+  </header>
+  <%= yield %>
+
+  <!-- ==============================================
+  Footer
+  =============================================== -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center animated" data-animation="flipInY">
+          <i class="icon-phone"></i>
+          <p>+91 9881 4741 84</p>
+        </div> <!-- End Column 4 -->
+        <div class="col-sm-4 text-center animated" data-animation="flipInY" data-animation-delay="300">
+          <i class="icon-comment-alt"></i>
+          <p><a href="mailto:">info@scrapegenie.co.in</a></p>
+        </div> <!-- End Column 4 -->
+        <div class="col-sm-4 text-center animated" data-animation="flipInY" data-animation-delay="600">
+          <i class="icon-map-marker"></i>
+          <p>Nirmal Darshan B205, Nirmal, <br>
+            Vasai(W) 401304, India</p>
+        </div> <!-- End Column 4 -->
+      </div> <!-- End Row -->
+      <div class="row">
+        <div class="col-md-12 contanct-form-container">
+          <a href="#" class="contact-form-trigger">
+            <h3>Send us a message</h3>
+          </a>
+          <form method="post" action="http://www.thecowisgonemoo.com/nervaq/send-mail.php" class="contact-form">
+            <div class="contact-form-close">
+              <a href="#"></a>
+            </div>
+            <h2 class="section-pre-title">Keep in touch</h2>
+            <h1 class="section-title">Contact Us</h1>
+            <div class="section-icon background-white"></div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="Insert your name" class="required">
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
+              </div>
+            </div>
+            <textarea name="message" placeholder="Insert your message" class="required"></textarea>
+            <div class="response-message"></div>
+            <input type="submit" value="Send Email" name="submit">	
+          </form> <!-- End Form -->
+        </div> <!-- End Contact Form Container -->
+      </div> <!-- End Row -->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="social-nav">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a>
+          </div>
+          <p class="copy">© 2013 ScrapeGenie. All Rights Reserved.</p>
+        </div> <!-- End Column 12 -->
+      </div> <!-- End Row -->
+    </div> <!-- End Container -->
+  </section> <!-- End Footer Section -->
+  <!-- ==============================================
+                  JS
+                  =============================================== -->
+  <script type="text/javascript" src="/assets/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/waypoints.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.easing.js"></script>
+  <script type="text/javascript" src="/assets/jquery.prettyphoto.js"></script>
+  <script type="text/javascript" src="/assets/jquery.nav.js"></script>
+  <script type="text/javascript" src="/assets/jquery.scrollTo.min"></script>
+  <script type="text/javascript" src="/assets/jquery.backstretch.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.flexslider.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.waitforimages.js"></script>
+  <script type="text/javascript" src="/assets/jquery.appear.js"></script>
+  <script type="text/javascript" src="/assets/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="/assets/jquery.easypiechart.js"></script>
+  <script type="text/javascript" src="/assets/js"></script>
+  <script type="text/javascript" src="/assets/main.js" ></script>
+  <script type="text/javascript" src="/assets/scrapegeine.js"></script>
+
+</body>
+</html>
