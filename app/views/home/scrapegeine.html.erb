@@ -48,9 +48,9 @@ About
     <div class="row">
       <div class="col-md-12">
         <h2 class="section-pre-title">Discover everything</h2>
-        <h1 class="section-title">About Us</h1>
+        <h1 class="section-title" style="margin-bottom: 0px;">About Us</h1>
         <div class="section-icon">
-          <i class="fa fa-bullhorn"></i>
+          <i class="fa fa-bullhorn fa-spin" style="padding: 50px;border-radius: 50%; font-size: 3em"></i>
         </div>
       </div> <!-- End Column 12 -->
     </div> <!-- End Row -->
@@ -58,64 +58,78 @@ About
       <div class="col-md-12 ">
         <div class="col-md-6 one">
           <span >
-            <span class="hi-icon-about">
-              <i class="fa fa-money"></i>
-            </span>
-            <h4>Financial Services</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_financial_services">
+              <span class="hi-icon-about">
+                <i class="fa fa-money"></i>
+              </span>
+              <h4>Financial Services</h4>
+            </a>
           </span>          
         </div>
         <div class="col-md-6 two">
           <span >
-            <span class="hi-icon-about">
-              <i class="fa fa-shopping-cart"></i>
-            </span>
-            <h4>Marketers</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_marketers">
+              <span class="hi-icon-about">
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+              <h4>Marketers</h4>
+            </a>
           </span>          
         </div>
       </div>
       <div class="col-md-12">
         <div class="col-md-6  one">
           <span>
-            <span class="hi-icon-about">
-              <i class="fa fa-code-fork"></i>
-            </span>
-            <h4>Online Aggregators</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_online_aggregators">            
+              <span class="hi-icon-about">
+                <i class="fa fa-code-fork"></i>
+              </span>
+              <h4>Online Aggregators</h4>
+            </a>
           </span>          
         </div>
         <div class="col-md-6 two">
           <span >
-            <span class="hi-icon-about">
-              <i class="fa fa-flask"></i>
-            </span>
-            <h4>Researchers</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_researchers">  
+              <span class="hi-icon-about">
+                <i class="fa fa-flask"></i>
+              </span>
+              <h4>Researchers</h4>
+            </a>
           </span> 
         </div>
       </div>
       <div class="col-md-12 ">
         <div class="col-md-6 one">
           <span>
-            <span class="hi-icon-about">
-              <i class="fa fa-user-md"></i>
-            </span>
-            <h4>Reputation Management Profesionals</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_reputation_management">  
+              <span class="hi-icon-about">
+                <i class="fa fa-user-md"></i>
+              </span>
+              <h4>Reputation Management Profesionals</h4>
+            </a>
           </span>          
         </div>
         <div class="col-md-6 two">
           <span>
-            <span class="hi-icon-about">
-              <i class="fa fa-group"></i>
-            </span>
-            <h4>Government Compliance</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_government_compliance">  
+              <span class="hi-icon-about">
+                <i class="fa fa-group"></i>
+              </span>
+              <h4>Government Compliance</h4>
+            </a>
           </span>          
         </div>
       </div>
       <div class="col-md-12 ">
         <div class="col-md-6 one">
           <span >
-            <span class="hi-icon-about">
-              <i class="fa fa-search-plus"></i>
-            </span>
-            <h4>Search Engine Optimization Profesionals</h4>
+            <a href="<%= about_scrapegenie_path %>#about_us_search_engine">  
+              <span class="hi-icon-about">
+                <i class="fa fa-search-plus"></i>
+              </span>
+              <h4>Search Engine Optimization Profesionals</h4>
+            </a>
           </span>     
         </div>
       </div>
@@ -133,9 +147,9 @@ Services
     <div class="row">
       <div class="col-md-12">
         <h2 class="section-pre-title">We offer</h2>
-        <h1 class="section-title">Services</h1>
+        <h1 class="section-title" style="margin-bottom: 0px;">Services</h1>
         <div class="section-icon">
-          <i class="fa fa-wrench"></i>
+          <i class="fa fa-wrench fa-spin" style="padding: 50px;border-radius: 50%; font-size: 3em"></i>
         </div>
         <div class="row services-list">
           <div class="col-md-3 text-center service animated" data-animation="flipInY">
@@ -176,110 +190,6 @@ Services
 
 <!-- ==============================================
 Call to Action
-=============================================== -->
-<section class="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3>BRIDGING THE GAP BETWEEN GREAT CODE AND DESIGN</h3>
-        <div class="section-icon">
-          <i class="icon-ok"></i>
-        </div>
-        <a href="#portfolio" class="scrollto button">View our Portfolio</a>
-      </div> <!-- End Column 12 -->
-    </div> <!-- End Row -->
-  </div> <!-- End Container -->
-</section> <!-- End Call to Action -->
-
-<!-- ==============================================
-Testimonials
-=============================================== -->
-<section id="testimonials">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-pre-title">Our clients</h2>
-        <h2 class="section-title">Testimonials</h2>
-        <div class="section-icon background-white"></div>
-        <div class="flexslider testimonials-slider">
-
-          <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1000%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-940px, 0, 0);"><li class="clone" aria-hidden="true" style="width: 940px; float: left; display: block;">
-                <h3>Great template – I love it! It's one of the best templates I've ever purchased!</h3>
-                <h5>Joel Gardiner - Web Developer</h5>
-              </li>
-              <li style="width: 940px; float: left; display: block;" class="flex-active-slide">
-                <h3>Thank you for this awesome template, it’s great!</h3>
-                <h5>Julien, King of Madagascar</h5>
-              </li>
-              <li style="width: 940px; float: left; display: block;" class="">
-                <h3>Love your template! All pages are awesome! Congratulations!</h3>
-                <h5>Jarett Cale - Founder of Animation Loop</h5>
-              </li>
-              <li style="width: 940px; float: left; display: block;" class="">
-                <h3>Great template – I love it! It's one of the best templates I've ever purchased!</h3>
-                <h5>Joel Gardiner - Web Developer</h5>
-              </li>
-              <li style="width: 940px; float: left; display: block;" class="clone" aria-hidden="true">
-                <h3>Thank you for this awesome template, it’s great!</h3>
-                <h5>Julien, King of Madagascar</h5>
-              </li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a class="">2</a></li><li><a class="">3</a></li></ol></div> <!-- End Flexslider -->
-      </div> <!-- End Column 12 -->						
-    </div> <!-- End Row -->
-  </div> <!-- End Container -->
-</section> <!-- End Testimonials Section -->
-
-<!-- ==============================================
-Clients
-=============================================== -->
-<section id="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3 client-logo animated" data-animation="fadeInUp">
-        <a href="#" data-client="nokia">
-          <img src="/assets/client-logo-1.png" alt="" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3 client-logo animated" data-animation="fadeInUp" data-animation-delay="200">
-        <a href="#" data-client="logitech">
-          <img src="/assets/client-logo-3.png" alt="" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3 client-logo animated client-disabled" data-animation="fadeInUp" data-animation-delay="400">
-        <a href="#" data-client="philips">
-          <img src="/assets/client-logo-2.png" alt="" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3 client-logo animated client-disabled" data-animation="fadeInUp" data-animation-delay="600">
-        <a href="#" data-client="steelseries">
-          <img src="/assets/client-logo-4.png" alt="" class="img-responsive">
-        </a>
-      </div>
-    </div> <!-- End Row -->
-    <div class="row">
-      <div class="col-md-12 client-description" id="nokia">
-        <p class="bottom-margin"><em>This is an optional client description, you can disable this feature, as you can see for the last two clients.<br>
-            Here you can insert any type of content.</em></p>
-        <p>Nokia Corporation is a Finnish multinational communications and information technology corporation that is headquartered in Espoo, Finland. Its principal products are mobile telephones and portable IT devices.<br>
-          It also offers Internet services including applications, games, music, media and messaging, and free-of-charge digital map information and navigation services through its wholly owned subsidiary Navteq. Nokia owns a company named Nokia Solutions and Networks, which provides telecommunications network equipment and services.</p>
-      </div>
-      <div class="col-md-12 client-description" id="logitech">
-        <p class="bottom-margin"><em>This is an optional client description, you can disable this feature, as you can see for the last two clients.<br>
-            Here you can insert any type of content.</em></p>
-        <p>Logitech International S.A. is a global provider of personal computer accessories headquartered in Romanel-sur-Morges, Switzerland. The company develops and markets products like peripheral devices for PCs, including keyboards, mice, trackballs, microphones, game controllers and webcams. Logitech also makes home and computer speakers, headphones, wireless audio devices, as well as audio devices for MP3 players and mobile phones.<br>
-          In addition to its Swiss headquarters, the company has offices in Newark, California, as well as throughout Europe, Asia and the rest of the Americas. Logitech's sales and marketing activities are organized into four geographic regions: Americas, EMEA, Asia Pacific and China.</p>
-      </div>
-      <div class="col-md-12 client-description" id="philips">
-        <p>Koninklijke Philips N.V. is a Dutch multinational engineering and electronics conglomerate headquartered in Amsterdam. It was founded in Eindhoven in 1891 by Gerard Philips and his father Frederik. It is one of the largest electronics companies in the world and employs around 122,000 people across more than 60 countries.<br>
-          Philips is organized into three main divisions: Philips Consumer Lifestyle (formerly Philips Consumer Electronics and Philips Domestic Appliances and Personal Care), Philips Healthcare (formerly Philips Medical Systems) and Philips Lighting. As of 2012 Philips was the largest manufacturer of lighting in the world measured by applicable revenues.<br>
-          In 2013, the company sold the bulk of its remaining consumer electronics operations to Funai Electric Co.</p>
-      </div>
-      <div class="col-md-12 client-description" id="steelseries">
-        <p>SteelSeries is a Danish manufacturer of gaming peripherals and accessories, including headsets, keyboards, mice, gaming surfaces and software. SteelSeries has historically helped sponsor the growth of competitive gaming and electronic sports through professional team sponsorships and community support all over the world.</p>
-      </div>
-    </div>
-  </div> <!-- End Container -->
-</section> <!-- End Clients Section -->
-
 <!-- ==============================================
 Portfolio
 =============================================== -->
@@ -291,9 +201,8 @@ Portfolio
           <h2 class="section-pre-title">Projects</h2>
           <h1 class="section-title">Portfolio</h1>
           <div class="section-icon">
-            <i class="icon-briefcase"></i>
+            <i class="fa fa-briefcase"></i>
           </div>
-          <p>Ut ipsum odio, suscipit quis congue non, pulvinar non turpis. Mauris sed nisl metus. Cras sit amet nunc vel mauris semper.</p>
           <nav class="portfolio-filter">
             <ul>
               <li><a href="#" class="button active" data-filter="*">all</a></li>
@@ -425,82 +334,18 @@ Portfolio
 </section> <!-- End Portfolio Section -->
 
 <section class="empty-space"></section> <!-- Emnd Empty Space Section -->
-
-<!-- ==============================================
-Team
-=============================================== -->
-<section id="team" class="on-menu">
+<section class="call-to-action">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="section-pre-title">Meet the</h2>
-        <h1 class="section-title">Team</h1>
+        <h3>BRIDGING THE GAP BETWEEN GREAT CODE AND DESIGN</h3>
         <div class="section-icon">
-          <i class="icon-group"></i>
-        </div>
-        <p>Etiam quis leo molestie, porta est ac, tincidunt risus. Ut ipsum odio, suscipit quis congue non, <strong>pulvinar</strong> non turpis. Mauris sed nisl metus. Cras sit amet nunc vel mauris semper malesuada id eget justo.</p>
-      </div> <!-- End Column 12 -->
-    </div> <!-- End Row -->
-    <div class="row team-list">
-      <div class="col-md-4 text-center team-member animated" data-animation="flipInY">
-        <div class="image-container">
-          <img src="/assets/team-1.jpg" alt="team-1" class="img-responsive">
-        </div>
-        <h4>Jarett Cale</h4>
-        <h5>Founder</h5>
-      </div> <!-- End Column 4 -->
-      <div class="col-md-4 text-center team-member animated" data-animation="flipInY" data-animation-delay="200">
-        <div class="image-container">
-          <img src="/assets/team-2.jpg" alt="team-2" class="img-responsive">
-        </div>
-        <h4>Miranda Plant</h4>
-        <h5>Designer</h5>
-      </div> <!-- End Column 4 -->
-      <div class="col-md-4 text-center team-member animated" data-animation="flipInY" data-animation-delay="400">
-        <div class="image-container">
-          <img src="/assets/team-3.jpg" alt="team-3" class="img-responsive">
-        </div>
-        <h4>Joel Gardiner</h4>
-        <h5>Developer</h5>
-      </div> <!-- End Column 4 -->
-    </div> <!-- End Row -->
-  </div> <!-- End Container -->
-</section> <!-- End Team Section -->
-
-<!-- ==============================================
-Join
-=============================================== -->
-<section id="join">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-pre-title">There's nothing else like Nervaq</h2>
-        <h1 class="section-title">Purchase now</h1>
-      </div> <!-- End Column 12 -->						
-    </div> <!-- End Row -->
-  </div> <!-- End Container -->
-</section> <!-- End Join Section -->
-
-<!-- ==============================================
-Newsletter
-=============================================== -->
-<section id="newsletter" class="on-menu">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-pre-title">Subscribe to our</h2>
-        <h1 class="section-title">Newsletter</h1>
-        <div class="section-icon">
-          <i class="icon-envelope"></i>
-        </div>
-        <p>Ut ipsum odio, suscipit quis congue non, pulvinar non turpis. Mauris sed nisl metus. Cras sit amet nunc vel mauris semper.</p>
-        <form method="post" action="#" id="newsletter-form">
-          <input type="text" name="email" id="newsletter-name" placeholder="Insert your e-mail..." required="">
-          <input type="submit" name="submit" id="newsletter-submit" value="Join Us">
-          <p class="form-message"></p>		
-        </form> <!-- End Form -->
-        <p>You can trust us, we don't spam</p>
+          <i class="fa fa-video-camera"></i>
+        </div> <!-- End Column 12 -->
+        <iframe id="player" type="text/html" style="height: 600px; width: 100%"
+  src="https://www.youtube.com/embed/Ps-qDB67PKA?enablejsapi=1&origin=http%3A%2F%2Flocalhost%3A3000"
+  frameborder="0"></iframe>
       </div> <!-- End Column 12 -->
     </div> <!-- End Row -->
   </div> <!-- End Container -->
-</section> <!-- End Newsletter Section -->
+</section> <!-- End Call to Action -->

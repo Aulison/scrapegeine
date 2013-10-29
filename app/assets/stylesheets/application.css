@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
 */
+section#about .one:hover,
+section#about .two:hover{
+    color: #5aa9ce !important;
+    background-color: #e1e1e1;
+}
+section#about .one:hover h4,
+section#about .two:hover h4{
+    color: #5aa9ce !important;
+}
+section#about .one:hover .hi-icon-about,
+section#about .two:hover .hi-icon-about{
+    color: #5aa9ce !important;
+}
+section#about .one:hover .hi-icon-about:hover,
+section#about .two:hover .hi-icon-about:hover{
+    color: white !important;
+}

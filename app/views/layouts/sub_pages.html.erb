@@ -49,6 +49,13 @@
   <!-- <script type="text/javascript" charset="UTF-8" src="/assets/{common,util,stats}.js"></script> -->
 </head>
 <body>
+  
+  <!-- ==============================================
+  Preloader
+  =============================================== -->
+  <div id="preloader" style="display: block;">
+    <div id="loading-animation" style="display: block;">&nbsp;</div>
+  </div> <!-- End Preloader -->
   <!-- ==============================================
   Main Nav
   =============================================== -->
@@ -83,15 +90,15 @@
   <section id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center animated" data-animation="flipInY">
           <i class="icon-phone"></i>
           <p>+91 9881 4741 84</p>
         </div> <!-- End Column 4 -->
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center animated" data-animation="flipInY" data-animation-delay="300">
           <i class="icon-comment-alt"></i>
           <p><a href="mailto:">info@scrapegenie.co.in</a></p>
         </div> <!-- End Column 4 -->
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center animated" data-animation="flipInY" data-animation-delay="600">
           <i class="icon-map-marker"></i>
           <p>Nirmal Darshan B205, Nirmal, <br>
             Vasai(W) 401304, India</p>
@@ -100,9 +107,9 @@
       <div class="row">
         <div class="col-md-12 contanct-form-container">
           <a href="#" class="contact-form-trigger">
-            <h3>Send us a message</h3>
+            <h3>Request A Quote</h3>
           </a>
-          <form method="post" action="http://www.thecowisgonemoo.com/nervaq/send-mail.php" class="contact-form">
+          <form method="post" action="" class="contact-form">
             <div class="contact-form-close">
               <a href="#"></a>
             </div>
@@ -117,9 +124,57 @@
                 <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="Insert your phone number" class="required">
+              </div>
+              <div class="col-md-6">
+                <div id="left">
+                  <select name="number_of_sites" class="contact-form-email required col-md-6" style="margin-right: 47px;">
+                    <option >Number of Sites</option>
+                    <option value="1">1</option>
+                    <option value="5">2-5</option>
+                    <option value="10">6-10</option>
+                    <option value="20">11-20</option>
+                    <option value="100">21-100</option>
+                    <option value="999">100+</option>
+                  </select>
+                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                </div>
+                <div id="right">
+                  <select name="number_of_fields" class="contact-form-email required col-md-5">
+                    <option >Number of Fields</option>
+                    <option value="1">1</option>
+                    <option value="5">2-5</option>
+                    <option value="10">6-10</option>
+                    <option value="20">11-20</option>
+                    <option value="100">21-100</option>
+                    <option value="999">100+</option>
+                  </select>
+                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <select name="number_of_fields" class="contact-form-email required col-md-12">
+                  <option >Number of Fields</option>
+                  <option value="1">1</option>
+                  <option value="5">2-5</option>
+                  <option value="10">6-10</option>
+                  <option value="20">11-20</option>
+                  <option value="100">21-100</option>
+                  <option value="999">100+</option>
+                </select>
+                <i id="dropdown_ic" class="fa fa-angle-down"></i>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
+              </div>
+            </div>
             <textarea name="message" placeholder="Insert your message" class="required"></textarea>
             <div class="response-message"></div>
-            <input type="submit" value="Send Email" name="submit">	
+            <input type="submit" value="Send Quote" name="submit">	
           </form> <!-- End Form -->
         </div> <!-- End Contact Form Container -->
       </div> <!-- End Row -->

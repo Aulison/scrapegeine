@@ -117,7 +117,6 @@ jQuery(document).ready(function($) {
         $('#navigation').toggleClass('active');
 
     });
-
     /* One Page Navigation
     =========================================*/
     $('.one-page-nav, .sidr-class-nav').onePageNav({

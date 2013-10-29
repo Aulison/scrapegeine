@@ -4,6 +4,7 @@ Scrapegeine::Application.routes.draw do
   root :to => "home#scrapegeine", :as => :scrapegeine
   match "home"  => "home#scrapegeine", :as => :home
   match "services" => "home#services", :as => :services
+  match "about_scrapegenie" => "home#about_scrapegenie", :as => :about_scrapegenie
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

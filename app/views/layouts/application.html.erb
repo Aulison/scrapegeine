@@ -71,8 +71,8 @@
   <!-- ==============================================
   Preloader
   =============================================== -->
-  <div id="preloader" style="display: none;">
-    <div id="loading-animation" style="display: none;">&nbsp;</div>
+  <div id="preloader" style="display: block;">
+    <div id="loading-animation" style="display: block;">&nbsp;</div>
   </div> <!-- End Preloader -->
 
   <!-- ==============================================
@@ -80,24 +80,22 @@
   =============================================== -->
   <header id="mainHeader"class="navbar navbar-fixed-top"> 
     <div class="container">
-    <a href="" class="navbar-brand brand">
-      <span id="logo" style="color: #fff;background: transparent;">
-        <span style="color: #1197CE">S</span>crape<span style="color: #5aa9ce">G</span>enie
-      </span>
-    </a>
-      <a href="#" class="nav-menu-trigger"><i class="icon-twitter"></i></a>
-    <nav id="navigation">
-      <ul class="nav navbar-nav one-page-nav">
-        <li id="home_link" class="current"><a href="<%= home_url %>#home">Home</a></li>
-        <li id="about_link"><a href="<%= home_url %>#about">About</a></li>
-        <li id="services_link"><a href="#services">Services</a></li>			
-        <li id="portfolio_link"><a href="#portfolio">Portfolio</a></li>
-        <li id="team_link"><a href="#team">Team</a></li>
-        <li id="contact_link"><a href="#newsletter">Contact</a></li>
-        <li><a href="shortcodes.html" class="external">Shortcodes</a></li>
-      </ul>
-    </nav>
-      </div>
+      <a href="" class="navbar-brand brand">
+        <span id="logo" style="color: #fff;background: transparent;">
+          <span style="color: #1197CE">S</span>crape<span style="color: #5aa9ce">G</span>enie
+        </span>
+      </a>
+      <a href="#" class="nav-menu-trigger"><i class="fa fa-reorder"></i></a>
+      <nav id="navigation">
+        <ul class="nav navbar-nav one-page-nav">
+          <li id="home_link" class="current"><a href="<%= home_url %>#home">Home</a></li>
+          <li id="about_link"><a href="<%= home_url %>#about">About</a></li>
+          <li id="services_link"><a href="#services">Services</a></li>			
+          <li id="portfolio_link"><a href="#portfolio">Portfolio</a></li>
+          <li id="contact_link"><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <%= yield %>
 
@@ -136,6 +134,54 @@
             <div class="row">
               <div class="col-md-6">
                 <input type="text" name="name" placeholder="Insert your name" class="required">
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="Insert your phone number" class="required">
+              </div>
+              <div class="col-md-6">
+                <div id="left">
+                  <select name="number_of_sites" class="contact-form-email required col-md-6" style="margin-right: 47px;">
+                    <option >Number of Sites</option>
+                    <option value="1">1</option>
+                    <option value="5">2-5</option>
+                    <option value="10">6-10</option>
+                    <option value="20">11-20</option>
+                    <option value="100">21-100</option>
+                    <option value="999">100+</option>
+                  </select>
+                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                </div>
+                <div id="right">
+                  <select name="number_of_fields" class="contact-form-email required col-md-5">
+                    <option >Number of Fields</option>
+                    <option value="1">1</option>
+                    <option value="5">2-5</option>
+                    <option value="10">6-10</option>
+                    <option value="20">11-20</option>
+                    <option value="100">21-100</option>
+                    <option value="999">100+</option>
+                  </select>
+                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <select name="number_of_fields" class="contact-form-email required col-md-12">
+                  <option >Number of Fields</option>
+                  <option value="1">1</option>
+                  <option value="5">2-5</option>
+                  <option value="10">6-10</option>
+                  <option value="20">11-20</option>
+                  <option value="100">21-100</option>
+                  <option value="999">100+</option>
+                </select>
+                <i id="dropdown_ic" class="fa fa-angle-down"></i>
               </div>
               <div class="col-md-6">
                 <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
@@ -182,6 +228,5 @@
   <script type="text/javascript" src="/assets/js"></script>
   <script type="text/javascript" src="/assets/main.js" ></script>
   <script type="text/javascript" src="/assets/scrapegeine.js"></script>
-
 </body>
 </html>
