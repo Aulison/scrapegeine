@@ -880,7 +880,7 @@ About Section
     display: inline-block
 }
 #about .about-product .one {
-    margin-right: 70px;
+    margin-right: 0px;
     margin-bottom: 10px;
 }
 #about .about-product .two {
