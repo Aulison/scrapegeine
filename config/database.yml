@@ -14,6 +14,7 @@ development:
   reconnect: false
   database: scrapegenie
   pool: 5
+  host: localhost
   username: root
   password: root
   socket: /var/run/mysqld/mysqld.sock
@@ -27,6 +28,7 @@ test:
   reconnect: false
   database: scrapegeine_test
   pool: 5
+  host: localhost
   username: root
   password: root
   socket: /var/run/mysqld/mysqld.sock
