@@ -144,6 +144,25 @@
                 <input type="text" name="name" placeholder="Insert your phone number" class="required">
               </div>
               <div class="col-md-6">
+                <input type="text" name="time_contact" placeholder="Time to contact you" class="contact-form-email required">
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <select name="number_of_fields" class="contact-form-email required col-md-12">
+                  <option >Frequency</option>
+                  <option value="1">one time only</option>
+                  <option value="2">once an hour</option>
+                  <option value="3">once a day</option>
+                  <option value="4">once a week</option>
+                  <option value="5">once a month</option>
+                  <option value="6">other</option>
+                  <option value="7">don't know yet</option>
+                </select>
+                <i id="dropdown_ic" class="fa fa-angle-down"></i>
+              </div>
+              <div class="col-md-6">
                 <div id="left">
                   <select name="number_of_sites" class="contact-form-email required col-md-6" style="margin-right: 47px;">
                     <option >Number of Sites</option>
@@ -168,24 +187,6 @@
                   </select>
                   <i id="dropdown_icon" class="fa fa-angle-down"></i>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <select name="number_of_fields" class="contact-form-email required col-md-12">
-                  <option >Frequency</option>
-                  <option value="1">one time only</option>
-                  <option value="2">once an hour</option>
-                  <option value="3">once a day</option>
-                  <option value="4">once a week</option>
-                  <option value="5">once a month</option>
-                  <option value="6">other</option>
-                  <option value="7">don't know yet</option>
-                </select>
-                <i id="dropdown_ic" class="fa fa-angle-down"></i>
-              </div>
-              <div class="col-md-6">
-                <input type="text" name="time_contact" placeholder="Time to contact you" class="contact-form-email required">
               </div>
             </div>
             <textarea name="message" placeholder="Insert your message" class="required"></textarea>
