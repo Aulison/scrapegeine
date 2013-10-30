@@ -133,65 +133,45 @@
             <div class="section-icon background-white"></div>
             <div class="row">
               <div class="col-md-6">
-                <input type="text" name="name" placeholder="Insert your name" class="required">
+                <input id='contact_name' type="text" name="name" placeholder="Insert your name" class="required">
               </div>
               <div class="col-md-6">
-                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
+                <input id='contact_email' type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <input type="text" name="name" placeholder="Insert your phone number" class="required">
+                <input id='contact_phone' type="text" name="phone" placeholder="Insert your phone number" class="required">
               </div>
               <div class="col-md-6">
-                <input type="text" name="time_contact" placeholder="Time to contact you" class="contact-form-email required">
+                <input id='contact_time' type="text" name="time_contact" placeholder="Time to contact you" class="contact-form-email required">
               </div>
-
             </div>
             <div class="row">
               <div class="col-md-6">
-                <select name="number_of_fields" class="contact-form-email required col-md-12">
-                  <option >Frequency</option>
-                  <option value="1">one time only</option>
-                  <option value="2">once an hour</option>
-                  <option value="3">once a day</option>
-                  <option value="4">once a week</option>
-                  <option value="5">once a month</option>
-                  <option value="6">other</option>
-                  <option value="7">don't know yet</option>
-                </select>
-                <i id="dropdown_ic" class="fa fa-angle-down"></i>
+                <div id="left">
+                  <%= select(:sites, :id, SiteCountMaster.all.collect{ |r| [r.site_range, r.id]},{:prompt => "Number of Sites"},
+                    {:class => "contact-form-email required col-md-5 select_webkit"}) %>
+                </div>
+                <div id="right">
+                  <%= select(:industry, :id, IndustryMaster.all.collect{ |r| [r.name, r.id]},{:prompt => "Select Industry"},
+                    {:class => "contact-form-email required col-md-5 select_webkit"}) %>
+                </div>
               </div>
               <div class="col-md-6">
                 <div id="left">
-                  <select name="number_of_sites" class="contact-form-email required col-md-6" style="margin-right: 47px;">
-                    <option >Number of Sites</option>
-                    <option value="1">1</option>
-                    <option value="5">2-5</option>
-                    <option value="10">6-10</option>
-                    <option value="20">11-20</option>
-                    <option value="100">21-100</option>
-                    <option value="999">100+</option>
-                  </select>
-                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                  <%= select(:field, :id, FieldCountMaster.all.collect{ |r| [r.field_range, r.id]},{:prompt => "Number of Fields"},
+                    {:class => "contact-form-email required col-md-5 select_webkit"}) %>
                 </div>
                 <div id="right">
-                  <select name="number_of_fields" class="contact-form-email required col-md-5">
-                    <option >Number of Fields</option>
-                    <option value="1">1</option>
-                    <option value="5">2-5</option>
-                    <option value="10">6-10</option>
-                    <option value="20">11-20</option>
-                    <option value="100">21-100</option>
-                    <option value="999">100+</option>
-                  </select>
-                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                  <%= select(:frequency, :id, FrequencyMaster.all.collect{ |r| [r.frequency, r.id]},{:prompt => "Frequency"},
+                    {:class => "contact-form-email required col-md-5 select_webkit"}) %>
                 </div>
               </div>
             </div>
-            <textarea name="message" placeholder="Insert your message" class="required"></textarea>
+            <textarea id='contact_message' name="message" placeholder="Insert your message" class="required"></textarea>
             <div class="response-message"></div>
-            <input type="submit" value="Send Email" name="submit">	
+            <input type="submit" value="Send Quote" name="submit" onclick="request_a_quote()">	
           </div> <!-- End Form -->
         </div> <!-- End Contact Form Container -->
       </div> <!-- End Row -->
@@ -229,6 +209,7 @@
   <script type="text/javascript" src="/assets/jquery.easypiechart.js"></script>
   <script type="text/javascript" src="/assets/js"></script>
   <script type="text/javascript" src="/assets/main.js" ></script>
+  <script type="text/javascript" src="/assets/application.js"></script>
   <script type="text/javascript" src="/assets/scrapegeine.js"></script>
 </body>
 </html>

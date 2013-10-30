@@ -1116,6 +1116,10 @@ right: 30px;
     color: white;
 }
 
+#right select{
+    margin-left: 47px
+}
+
 /* ==================================================================
 Clients Section
 ================================================================== */
@@ -1745,11 +1749,9 @@ Footer Section
 }
 
 #footer .response-message {
-    text-transform: uppercase;
     color: #ffffff;
     margin: 30px 0 40px 0;
     font-size: 30px;
-    letter-spacing: 0.20em;
     font-weight: 300;
     font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -2045,4 +2047,10 @@ ul.socialNetwork {
 .clients_h2{
     margin-bottom: 0px;
 color: white;
+}
+.select_webkit{
+    -webkit-appearance: menulist-button; 
+    -moz-appearance: menulist-button; 
+    appearance: menulist-button; 
+    width: 45.666667%;
 }

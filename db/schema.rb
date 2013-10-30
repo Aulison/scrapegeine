@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131030061916) do
+ActiveRecord::Schema.define(:version => 20131030111733) do
+
+  create_table "field_count_masters", :force => true do |t|
+    t.string   "field_range"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "frequency_masters", :force => true do |t|
+    t.string   "frequency"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "industry_masters", :force => true do |t|
     t.string   "name"
@@ -24,12 +36,21 @@ ActiveRecord::Schema.define(:version => 20131030061916) do
     t.string   "email"
     t.string   "phone"
     t.integer  "no_of_sites"
-    t.string   "no_of_fields"
+    t.integer  "no_of_fields"
     t.integer  "frequency"
     t.string   "time_to_contact"
     t.text     "message"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "industry_id"
+  end
+
+  add_index "quote_users", ["id"], :name => "idx_id"
+
+  create_table "site_count_masters", :force => true do |t|
+    t.string   "site_range"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

@@ -5,7 +5,7 @@ class CreateQuoteUsers < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.integer :no_of_sites
-      t.string :no_of_fields
+      t.integer :no_of_fields
       t.integer :frequency
       t.string :time_to_contact
       t.text :message

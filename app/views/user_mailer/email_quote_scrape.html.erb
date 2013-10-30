@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <div style="width: 100%;font-family: Tahoma;font-size: 12px;">
+      <div style="background-color: #ECEEF0;padding: 20px 0px 30px;">
+        <div style="width: 94%;margin: 0px auto">
+          <div style="background-color: white;border: 1px solid #CFDAE4;border-top: 0;padding:  15px;">
+            <br/>
+            <br/>
+            Hi <b style="color: darkblue">ScrapeGenie,</b><br/><br/>
+             Quote Requested from following user.<br/><br/>
+            <b>Request details :</b><br/>
+            <div style="background-color: #FFFADB; border: 1px solid #EDDD79;">
+              <div style="padding: 10px;">
+                Name : <%=@contact.name.titleize%><br/>
+                Email : <%=@contact.email%><br/>
+                Phone : <%=@contact.phone%><br/>
+                Industry : <%= IndustryMaster.where(@contact.industry_id)[0]['name'] %><br/>
+                No of Sites: <%= SiteCountMaster.where(@contact.industry_id)[0]['site_range'] %><br/>
+                No of Fields : <%= FieldCountMaster.where(@contact.no_of_fields)[0]['field_range'] %><br/>
+                Frequency : <%= FrequencyMaster.where(@contact.frequency)[0]['frequency'] %><br/>
+                Message : <%= @contact.message%>
+              </div>
+            </div>
+            <br/>
+            You are receiving this email because of your support request with ScrapeGenie that entitles you to receive this one time mail communication. 
+          </div>
+          <div style="float: left;color: #999; padding: 5px 0px 0px 0px; width: 100%">
+            <span>This e-mail is generated from ScrapeGenie email accounts. If you think this is a SPAM, please report to <a target="_blank" href="mailto:abuse@scrapegenie.in">abuse@scrapegenie.in</a> for immediate action.</span>
+            <span style="float: right">Delivered by <a href='#'>ScrapeGenie</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

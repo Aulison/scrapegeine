@@ -34,4 +34,23 @@ Scrapegeine::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+   
+  config.action_dispatch.x_sendfile_header = "X-Sendfile"
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+     
+    ### Old settings
+    :address              => "mail.zerebral.co.in",
+    :port                 => 587,
+    :domain               => 'zerebral.in',
+    :user_name            => 'aulison.dsilva@zerebral.co.in',
+    :password             => 'aulison123',
+    :authentication       => "plain",
+    :enable_starttls_auto => false,
+    :openssl_verify_mode  => 'none'
+     
+  }
 end

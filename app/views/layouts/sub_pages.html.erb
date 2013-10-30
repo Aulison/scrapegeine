@@ -109,7 +109,7 @@
           <a href="#" class="contact-form-trigger">
             <h3>Request A Quote</h3>
           </a>
-          <form method="post" action="" class="contact-form">
+          <div class="contact-form">
             <div class="contact-form-close">
               <a href="#"></a>
             </div>
@@ -118,31 +118,58 @@
             <div class="section-icon background-white"></div>
             <div class="row">
               <div class="col-md-6">
-                <input type="text" name="name" placeholder="Insert your name" class="required">
+                <input id='contact_name' type="text" name="name" placeholder="Insert your name" class="required">
               </div>
               <div class="col-md-6">
-                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
+                <input id='contact_email' type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <input type="text" name="name" placeholder="Insert your phone number" class="required">
+                <input id='contact_phone' type="text" name="phone" placeholder="Insert your phone number" class="required">
+              </div>
+              <div class="col-md-6">
+                <input id='contact_time' type="text" name="time_contact" placeholder="Time to contact you" class="contact-form-email required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div id="left">
+                  <select id='contact_no_of_sites' name="number_of_sites" class="contact-form-email required col-md-6  select_webkit" style="margin-right: 47px;">
+                    <option >Number of Sites</option>
+                    <option value="1">1-20</option>
+                    <option value="2">21-40</option>
+                    <option value="3">41-60</option>
+                    <option value="4">61-80</option>
+                    <option value="5">81-100</option>
+                    <option value="6">101-120</option>
+                    <option value="7">121-140</option>
+                    <option value="8">141-160</option>
+                    <option value="9">161-180</option>
+                    <option value="10">181-200</option>
+                    <option value="11">201-500</option>
+                    <option value="12">501-1000</option>
+                    <option value="13">1001-5000</option>
+                    <option value="14">5001-10000</option>
+                    <option value="15">10001-20000</option>
+                    <option value="16">20001-30000</option>
+                    <option value="17">30001-40000</option>
+                    <option value="18">40001-50000</option>
+                    <option value="19">50000-100000</option>
+                    <option value="20">100000+</option>
+                  </select>
+
+                  <%#*<i id="dropdown_icon" class="fa fa-angle-down"></i>%>
+                </div>
+                <div id="right">
+                  <%= select(:industry, :id, IndustryMaster.all.collect{ |r| [r.name, r.id]},{:prompt => "Select Industry"},
+                    {:class => "contact-form-email required col-md-5 select_webkit"}) %>
+                  <%#*<i id="dropdown_icon" class="fa fa-angle-down"></i>%>
+                </div>
               </div>
               <div class="col-md-6">
                 <div id="left">
-                  <select name="number_of_sites" class="contact-form-email required col-md-6" style="margin-right: 47px;">
-                    <option >Number of Sites</option>
-                    <option value="1">1</option>
-                    <option value="5">2-5</option>
-                    <option value="10">6-10</option>
-                    <option value="20">11-20</option>
-                    <option value="100">21-100</option>
-                    <option value="999">100+</option>
-                  </select>
-                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
-                </div>
-                <div id="right">
-                  <select name="number_of_fields" class="contact-form-email required col-md-5">
+                  <select id='contact_no_of_fields' name="number_of_fields" class="contact-form-email required col-md-6  select_webkit" style="margin-right: 47px;">
                     <option >Number of Fields</option>
                     <option value="1">1</option>
                     <option value="5">2-5</option>
@@ -151,31 +178,25 @@
                     <option value="100">21-100</option>
                     <option value="999">100+</option>
                   </select>
-                  <i id="dropdown_icon" class="fa fa-angle-down"></i>
+                </div>
+                <div id="right">
+                  <select id='contact_frequency' name="frequency" class="contact-form-email required col-md-5 select_webkit" >
+                    <option >Frequency</option>
+                    <option value="1">one time only</option>
+                    <option value="2">once an hour</option>
+                    <option value="3">once a day</option>
+                    <option value="4">once a week</option>
+                    <option value="5">once a month</option>
+                    <option value="6">other</option>
+                    <option value="7">don't know yet</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <select name="number_of_fields" class="contact-form-email required col-md-12">
-                  <option >Number of Fields</option>
-                  <option value="1">1</option>
-                  <option value="5">2-5</option>
-                  <option value="10">6-10</option>
-                  <option value="20">11-20</option>
-                  <option value="100">21-100</option>
-                  <option value="999">100+</option>
-                </select>
-                <i id="dropdown_ic" class="fa fa-angle-down"></i>
-              </div>
-              <div class="col-md-6">
-                <input type="email" name="email" placeholder="Insert your email address" class="contact-form-email required">
-              </div>
-            </div>
-            <textarea name="message" placeholder="Insert your message" class="required"></textarea>
+            <textarea id='contact_message' name="message" placeholder="Insert your message" class="required"></textarea>
             <div class="response-message"></div>
-            <input type="submit" value="Send Quote" name="submit">	
-          </form> <!-- End Form -->
+            <input type="submit" value="Send Quote" name="submit" onclick="request_a_quote()">	
+          </div> <!-- End Form -->
         </div> <!-- End Contact Form Container -->
       </div> <!-- End Row -->
       <div class="row">
